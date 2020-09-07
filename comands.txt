@@ -1,0 +1,3 @@
+npx stylelint "**/*.{css,scss}"
+npx hint .
+sass --watch app/sass:public/stylesheets
