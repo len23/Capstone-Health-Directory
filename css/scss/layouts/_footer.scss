@@ -2,13 +2,16 @@
   background-color: $black-color; 
   color: $white-color;
   &_main {
+    @include max-width_center(133rem);
     padding: 4rem 7rem 0;
   }
   &_nav {
-    @include max-width_center(137rem);
     @extend .footer_border;
     padding: 1.3rem 1rem;
     position: relative;
+    @media screen and (max-width: 1024px) { 
+      padding-bottom: 0;
+    }
     ul {
       @extend .flex-space-between;
       li {
@@ -18,24 +21,41 @@
           text-transform: uppercase;
           font-weight: $semi-bold;
         }
+        @media screen and (max-width: 1024px) {
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+          margin-bottom: 2rem;
+         }
       }
+      @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        justify-content: center;
+       }
     }
   }
   &_circle {
     border: $border-footer;
-    @include circle(11rem);
+    @include circle(9%,11rem);
     position: absolute;
     color: $white-color;
     font-size: 4rem;
-    left: 46%;
+    left: 45.5%;
     top: -63%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $black-color;
+     @media screen and (max-width: 1024px) {
+      display: none;
+     }
   }
   &_logo {
     background-color: $black-color;
+    width: 3%;
+    @media screen and (max-width: 1024px) {
+      display: none;
+     }
   }
   &_contact {
     display: grid;

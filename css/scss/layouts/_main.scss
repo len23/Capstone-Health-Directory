@@ -9,7 +9,7 @@ main {
     color: $red-color;
     text-align: center;
     font-size: 2rem;
-    font-weight: $semi-bold;
+    font-weight: $bold;
   }
 }
 
@@ -20,11 +20,17 @@ main {
   gap: 5rem;
   margin-top: 8rem;
   @include max-width_center(114rem);
+  @media screen and (max-width: 1024px) { 
+    grid-template-columns: auto;
+  }
 }
 
 .step {
   text-align: center;
   padding: 0 9rem;
+  @media screen and (max-width: 1024px) { 
+    @include max-width_center(58rem);
+  }
   i {
     font-size: 2.5rem;
   }
