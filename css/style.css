@@ -110,13 +110,13 @@ button {
   .sub-cont input {
     width: 85%;
     border: none;
-    height: 2.8rem; }
+    height: 3.8rem; }
   .sub-cont a {
     background-color: #e74c3a;
-    padding: 0.4rem 1.4rem 0;
+    padding: 1rem 1.4rem 0;
     color: #fff;
     display: inline-block;
-    margin-left: 0.6rem;
+    margin-left: -0.4rem;
     font-size: 1.4rem; }
 
 .btn-works {
@@ -144,7 +144,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 5rem;
-  margin-top: 8rem; }
+  margin-top: 8rem;
+  max-width: 114rem;
+  margin: 0 auto; }
 
 .step {
   text-align: center;
@@ -217,7 +219,7 @@ main {
     display: grid;
     grid-template-columns: 1.1fr 1fr 1.1fr;
     column-gap: 2rem;
-    margin-top: 4rem; }
+    margin: 4rem 0 2rem; }
     .footer_contact h4 {
       font-size: 2.2rem;
       margin-bottom: 2.3rem;
@@ -226,7 +228,7 @@ main {
       font-size: 1.4rem;
       color: #98a4a5;
       text-align: center; }
-    .footer_contact span {
+    .footer_contact a {
       color: #e74c3a; }
     .footer_contact-subscribe input {
       background-color: transparent;

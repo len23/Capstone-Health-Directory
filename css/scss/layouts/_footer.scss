@@ -41,7 +41,8 @@
     display: grid;
     grid-template-columns: 1.1fr 1fr 1.1fr;
     column-gap: 2rem;
-    margin-top: 4rem;
+    margin: 4rem 0 2rem;
+
     h4 {
       font-size: 2.2rem;
       margin-bottom: 2.3rem;
@@ -52,7 +53,7 @@
       color: $gray-background;
       text-align: center;
     }
-    span {
+    a {
       color: $red-color;
     }
     &-subscribe {

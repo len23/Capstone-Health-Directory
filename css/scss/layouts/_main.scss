@@ -19,6 +19,7 @@ main {
   justify-content: center; 
   gap: 5rem;
   margin-top: 8rem;
+  @include max-width_center(114rem);
 }
 
 .step {
