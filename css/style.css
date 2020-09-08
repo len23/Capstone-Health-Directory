@@ -208,15 +208,32 @@ main {
     background-color: #000; }
   .footer_contact {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    column-gap: 5rem;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    column-gap: 2rem;
     margin-top: 4rem;
     text-align: center; }
     .footer_contact h4 {
       font-size: 2.2rem;
       margin-bottom: 2.3rem; }
     .footer_contact p {
-      font-size: 1.2rem;
-      color: #4d5252; }
+      font-size: 1.4rem;
+      color: #98a4a5; }
+    .footer_contact span {
+      color: #e74c3a; }
+    .footer_contact-subscribe input {
+      background-color: transparent;
+      border: 2px solid #4d5252;
+      border-radius: 0.3rem;
+      padding-left: 0.7rem;
+      height: 3rem;
+      width: 50%; }
+
+.btn_footer {
+  background-color: #4d5252;
+  color: #fff;
+  height: 3rem;
+  margin-left: -1rem;
+  width: 8rem;
+  font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

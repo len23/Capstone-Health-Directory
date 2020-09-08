@@ -37,8 +37,8 @@
   }
   &_contact {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    column-gap: 5rem;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    column-gap: 2rem;
     margin-top: 4rem;
     text-align: center;
     h4 {
@@ -46,8 +46,30 @@
       margin-bottom: 2.3rem;
     }
     p {
-      font-size: 1.2rem;
-      color: $gray-opaque;
+      font-size: 1.4rem;
+      color: $gray-background;
+    }
+    span {
+      color: $red-color;
+    }
+    &-subscribe {
+      input {
+        background-color: transparent;
+        border: 2px solid #4d5252;
+        border-radius: 0.3rem;
+        padding-left: 0.7rem;
+        height: 3rem;
+        width: 50%;
+      }
     }
   }
+}
+
+.btn_footer {
+  background-color: $gray-opaque;
+  color: $white-color;
+  height: 3rem;
+  margin-left: -1rem;
+  width: 8rem;
+  font-weight: $semi-bold;
 }
