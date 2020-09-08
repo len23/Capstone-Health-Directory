@@ -66,3 +66,14 @@ main {
     @extend .cards-section;
   }
 }
+
+.circle-img {
+  width: 27em;
+  height: 27rem;
+  border-radius: 50%;
+}
+
+.rectangle-img {
+  width: 27em;
+  height: 27rem;
+}

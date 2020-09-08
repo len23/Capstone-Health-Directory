@@ -45,10 +45,6 @@ button {
     font-size: 1.7rem;
     font-weight: 400;
     margin-bottom: 1.8rem; }
-  .cards-section img, .find-section_content img, .near-section_content img, .anytime-section_content img {
-    width: 27em;
-    height: 27rem;
-    border-radius: 50%; }
   .cards-section .btn_cards, .find-section_content .btn_cards, .near-section_content .btn_cards, .anytime-section_content .btn_cards {
     background-color: #fff;
     border-radius: 0.5rem;
@@ -176,6 +172,15 @@ main {
 
 .anytime-section {
   background-color: #509bd7; }
+
+.circle-img {
+  width: 27em;
+  height: 27rem;
+  border-radius: 50%; }
+
+.rectangle-img {
+  width: 27em;
+  height: 27rem; }
 
 .footer {
   background-color: #000;
