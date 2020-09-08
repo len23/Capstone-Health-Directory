@@ -66,7 +66,8 @@ button {
   background-color: rgba(194, 193, 193, 0.322);
   padding: 5rem;
   width: 100%;
-  border-radius: 1.4rem; }
+  border-radius: 1.4rem;
+  text-align: left; }
   .search-header .form-search label {
     display: block;
     font-size: 1.7rem;
@@ -105,5 +106,23 @@ main {
     text-align: center;
     font-size: 2rem;
     font-weight: 600; }
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 8rem; }
+
+.step {
+  text-align: center;
+  padding: 0 9rem; }
+  .step i {
+    font-size: 2.5rem; }
+  .step h3 {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .step p {
+    font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
