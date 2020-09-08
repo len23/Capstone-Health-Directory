@@ -41,22 +41,29 @@ main {
 }
 
 .find-section {
-  @extend .cards-section;
   background-color: $red-color;
+  &_content {
+    @extend .cards-section;
+  }
   &_btn {
     color: $red-color;
   }
+ 
 }
 
 .near-section {
-  @extend .cards-section;
   background-color: $gray-background;
+  &_content {
+    @extend .cards-section;
+  }
   &_btn {
     color: $gray-background;
   }
 }
 
 .anytime-section {
-  @extend .cards-section;
   background-color: $blue-color;
+  &_content {
+    @extend .cards-section;
+  }
 }

@@ -1,0 +1,4 @@
+@mixin max-width_center($width) {
+  max-width: $width;
+  margin: 0 auto;
+}

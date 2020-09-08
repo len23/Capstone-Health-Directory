@@ -2,28 +2,34 @@
 .center-container, .steps_section {
   margin: 0 auto; }
 
-.cards-section, .find-section, .near-section, .anytime-section {
+.cards-section, .find-section_content, .near-section_content, .anytime-section_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 4rem 7rem;
-  color: #fff; }
-  .cards-section h3, .find-section h3, .near-section h3, .anytime-section h3 {
+  color: #fff;
+  max-width: 133rem;
+  margin: 0 auto; }
+  .cards-section h3, .find-section_content h3, .near-section_content h3, .anytime-section_content h3 {
     font-size: 2.2rem;
     margin-bottom: 1.7rem; }
-  .cards-section p, .find-section p, .near-section p, .anytime-section p {
+  .cards-section p, .find-section_content p, .near-section_content p, .anytime-section_content p {
     font-size: 1.7rem;
     font-weight: 400;
     margin-bottom: 1.8rem; }
-  .cards-section img, .find-section img, .near-section img, .anytime-section img {
+  .cards-section img, .find-section_content img, .near-section_content img, .anytime-section_content img {
     width: 27em;
     height: 27rem;
     border-radius: 50%; }
-  .cards-section .btn_cards, .find-section .btn_cards, .near-section .btn_cards, .anytime-section .btn_cards {
+  .cards-section .btn_cards, .find-section_content .btn_cards, .near-section_content .btn_cards, .anytime-section_content .btn_cards {
     background-color: #fff;
     border-radius: 0.5rem;
     padding: 1rem 1.3rem;
     font-weight: 600; }
+
+.max-width_cards {
+  max-width: 1130;
+  margin: 0 auto; }
 
 html {
   box-sizing: border-box;
