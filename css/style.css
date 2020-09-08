@@ -1,19 +1,93 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-}
+  font-family: "Cabin", sans-serif; }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+button {
+  font-family: "Cabin", sans-serif;
+  cursor: pointer; }
+
+.btn, .btn-works {
+  border: none; }
+
+.nav-header {
+  background-color: #e74c3a;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4.5rem; }
+  .nav-header .logo-header {
+    font-size: 2.5rem; }
+  .nav-header .links-header li {
+    display: inline-block; }
+    .nav-header .links-header li:not(:last-child) {
+      margin-right: 2.8rem; }
+    .nav-header .links-header li a {
+      color: #fff; }
+
+.banner-header {
+  height: 80vh;
+  background-image: linear-gradient(90deg, rgba(24, 23, 26, 0.8) 8%, rgba(46, 46, 48, 0.7) 58%), url("../../../images/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.info-header-container {
+  width: 60%;
+  text-align: center; }
+  .info-header-container h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: left; }
+
+.search-header {
+  background-color: rgba(194, 193, 193, 0.322);
+  padding: 5rem;
+  width: 100%;
+  border-radius: 1.4rem; }
+  .search-header .form-search label {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem; }
+
+.sub-cont {
+  display: flex; }
+  .sub-cont input {
+    width: 85%;
+    border: none;
+    height: 2.8rem; }
+  .sub-cont a {
+    background-color: #e74c3a;
+    padding: 0.4rem 1.4rem 0;
+    color: #fff;
+    display: inline-block;
+    margin-left: 0.6rem;
+    font-size: 1.4rem; }
+
+.btn-works {
+  background-color: #c2c1c1;
+  padding: 1.2rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  margin-top: 2.7rem; }
+
+/*# sourceMappingURL=style.css.map */

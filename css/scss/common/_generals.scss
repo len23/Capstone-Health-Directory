@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: $main-font;
 }
 
 *,
@@ -17,3 +18,12 @@ body {
 a {
   text-decoration: none;
 }
+
+button {
+  font-family: $main-font;
+  cursor: pointer;
+}
+
+.btn {
+  border:none;
+ }
