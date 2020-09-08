@@ -1,7 +1,9 @@
 @import "./common/variables";
 @import "./common/colors";
+@import "./common/classes";
 @import "./common/mixin";
 @import "./common/generals";
 
 
-@import "./layouts/header"
+@import "./layouts/header";
+@import "./layouts/main";

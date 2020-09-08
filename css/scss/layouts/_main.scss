@@ -1,0 +1,15 @@
+main {
+  margin-top: 3rem;
+}
+
+.steps_section {
+  padding: 3rem 0 0 0;
+  max-width: 100rem;
+  @extend .center-container;
+  h2 {
+    color: $red-color;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $semi-bold;
+  }
+}

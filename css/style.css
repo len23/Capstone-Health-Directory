@@ -1,3 +1,7 @@
+/* Font weights */
+.center-container, .steps_section {
+  margin: 0 auto; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -89,5 +93,17 @@ button {
   border-radius: 0.4rem;
   font-weight: 500;
   margin-top: 2.7rem; }
+
+main {
+  margin-top: 3rem; }
+
+.steps_section {
+  padding: 3rem 0 0 0;
+  max-width: 100rem; }
+  .steps_section h2 {
+    color: #e74c3a;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
