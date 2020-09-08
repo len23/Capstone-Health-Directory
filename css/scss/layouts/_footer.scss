@@ -1,7 +1,9 @@
 .footer {
   background-color: $black-color; 
-  padding: 4rem 7rem;
   color: $white-color;
+  &_main {
+    padding: 4rem 7rem 0;
+  }
   &_nav {
     @include max-width_center(137rem);
     @extend .footer_border;
@@ -37,17 +39,18 @@
   }
   &_contact {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
     column-gap: 2rem;
     margin-top: 4rem;
-    text-align: center;
     h4 {
       font-size: 2.2rem;
       margin-bottom: 2.3rem;
+      text-align: center;
     }
     p {
       font-size: 1.4rem;
       color: $gray-background;
+      text-align: center;
     }
     span {
       color: $red-color;
@@ -59,7 +62,31 @@
         border-radius: 0.3rem;
         padding-left: 0.7rem;
         height: 3rem;
-        width: 50%;
+        width: 75%;
+      }
+    }
+  }
+  &_social {
+    background-color: $gray-dark;
+    color: $gray-opaque;
+    @extend .flex-space-between;
+    padding: 1.7rem 1.5rem;
+    &-icons {
+      font-size: 1.5rem;
+      i {
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-right: 1.4rem;
+        }
+      }
+    }
+    &-copyright {
+      p{
+        text-transform: uppercase;
+        font-weight: $bold;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
       }
     }
   }

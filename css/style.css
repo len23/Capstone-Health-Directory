@@ -27,13 +27,14 @@ button {
 .btn, .btn-works {
   border: none; }
 
-.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .footer_nav ul {
+.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .footer_nav ul, .footer_social {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .cards-section, .find-section_content, .near-section_content, .anytime-section_content {
   align-items: center;
-  padding: 4rem 7rem;
+  padding: 2rem 7rem;
   color: #fff;
   max-width: 133rem;
   margin: 0 auto; }
@@ -133,7 +134,7 @@ main {
   margin-top: 3rem; }
 
 .steps_section {
-  padding: 3rem 0 0 0;
+  padding: 3rem 0 5rem 0;
   max-width: 1130rem;
   margin: 0 auto; }
   .steps_section h2 {
@@ -178,8 +179,9 @@ main {
 
 .footer {
   background-color: #000;
-  padding: 4rem 7rem;
   color: #fff; }
+  .footer_main {
+    padding: 4rem 7rem 0; }
   .footer_nav {
     max-width: 137rem;
     margin: 0 auto;
@@ -208,16 +210,17 @@ main {
     background-color: #000; }
   .footer_contact {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
     column-gap: 2rem;
-    margin-top: 4rem;
-    text-align: center; }
+    margin-top: 4rem; }
     .footer_contact h4 {
       font-size: 2.2rem;
-      margin-bottom: 2.3rem; }
+      margin-bottom: 2.3rem;
+      text-align: center; }
     .footer_contact p {
       font-size: 1.4rem;
-      color: #98a4a5; }
+      color: #98a4a5;
+      text-align: center; }
     .footer_contact span {
       color: #e74c3a; }
     .footer_contact-subscribe input {
@@ -226,7 +229,23 @@ main {
       border-radius: 0.3rem;
       padding-left: 0.7rem;
       height: 3rem;
-      width: 50%; }
+      width: 75%; }
+  .footer_social {
+    background-color: #292b2b;
+    color: #4d5252;
+    padding: 1.7rem 1.5rem; }
+    .footer_social-icons {
+      font-size: 1.5rem; }
+      .footer_social-icons i {
+        cursor: pointer; }
+        .footer_social-icons i:not(:last-child) {
+          margin-right: 1.4rem; }
+    .footer_social-copyright p {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      margin-bottom: 0; }
 
 .btn_footer {
   background-color: #4d5252;
