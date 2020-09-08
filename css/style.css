@@ -1,4 +1,5 @@
 /* Font weights */
+/* Border */
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -9,9 +10,12 @@ html {
 *::after {
   box-sizing: inherit; }
 
-body {
+body, ul {
   padding: 0;
   margin: 0; }
+
+ul {
+  list-style: none; }
 
 a {
   text-decoration: none; }
@@ -23,7 +27,7 @@ button {
 .btn, .btn-works {
   border: none; }
 
-.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header {
+.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .footer_nav ul {
   display: flex;
   justify-content: space-between; }
 
@@ -54,12 +58,16 @@ button {
   max-width: 1130rem;
   margin: 0 auto; }
 
+.footer_border, .footer_nav {
+  border-top: 2px solid #4d5252;
+  border-bottom: 2px solid #4d5252; }
+
 .nav-header {
   background-color: #e74c3a;
   color: #fff;
   font-size: 1.5rem;
   align-items: center;
-  padding: 1rem 4.5rem; }
+  padding: 2rem 4.5rem; }
   .nav-header .logo-header {
     font-size: 2.5rem; }
   .nav-header .links-header li {
@@ -167,5 +175,33 @@ main {
 
 .anytime-section {
   background-color: #509bd7; }
+
+.footer {
+  background-color: #000;
+  padding: 4rem 7rem; }
+  .footer_nav {
+    max-width: 137rem;
+    margin: 0 auto;
+    padding: 1.3rem 1rem;
+    position: relative; }
+    .footer_nav ul li a {
+      color: #fff;
+      font-size: 1.8rem; }
+  .footer_circle {
+    border: 2px solid #4d5252;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    left: 46%;
+    top: -63%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; }
+  .footer_logo {
+    background-color: #000; }
 
 /*# sourceMappingURL=style.css.map */

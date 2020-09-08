@@ -34,3 +34,8 @@
 .max-width_cards {
   @include max-width_center(1130rem)
 }
+
+.footer_border {
+  border-top: $border-footer;
+  border-bottom: $border-footer;
+}

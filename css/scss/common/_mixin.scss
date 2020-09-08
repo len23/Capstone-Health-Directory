@@ -2,3 +2,9 @@
   max-width: $width;
   margin: 0 auto;
 }
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}

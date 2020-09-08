@@ -1,0 +1,35 @@
+.footer {
+  background-color: $black-color; 
+  padding: 4rem 7rem;
+  &_nav {
+    @include max-width_center(137rem);
+    @extend .footer_border;
+    padding: 1.3rem 1rem;
+    position: relative;
+    ul {
+      @extend .flex-space-between;
+      li {
+        a {
+          color: $white-color;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  &_circle {
+    border: $border-footer;
+    @include circle(11rem);
+    position: absolute;
+    color: $white-color;
+    font-size: 4rem;
+    left: 46%;
+    top: -63%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black-color;
+  }
+  &_logo {
+    background-color: $black-color;
+  }
+}
