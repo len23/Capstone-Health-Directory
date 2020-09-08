@@ -2,6 +2,29 @@
 .center-container, .steps_section {
   margin: 0 auto; }
 
+.cards-section, .find-section, .near-section, .anytime-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 7rem;
+  color: #fff; }
+  .cards-section h3, .find-section h3, .near-section h3, .anytime-section h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.7rem; }
+  .cards-section p, .find-section p, .near-section p, .anytime-section p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem; }
+  .cards-section img, .find-section img, .near-section img, .anytime-section img {
+    width: 27em;
+    height: 27rem;
+    border-radius: 50%; }
+  .cards-section .btn_cards, .find-section .btn_cards, .near-section .btn_cards, .anytime-section .btn_cards {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+    font-weight: 600; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -121,8 +144,24 @@ main {
     font-size: 2.5rem; }
   .step h3 {
     font-size: 2rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
   .step p {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3.6rem; }
+
+.find-section {
+  background-color: #e74c3a; }
+  .find-section_btn {
+    color: #e74c3a; }
+
+.near-section {
+  background-color: #98a4a5; }
+  .near-section_btn {
+    color: #98a4a5; }
+
+.anytime-section {
+  background-color: #509bd7; }
 
 /*# sourceMappingURL=style.css.map */

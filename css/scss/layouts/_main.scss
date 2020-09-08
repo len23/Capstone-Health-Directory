@@ -31,8 +31,32 @@ main {
   h3 {
     font-size: 2rem;
     text-transform: uppercase;
+    font-weight: $bold;
   }
   p{
     font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3.6rem;
   }
+}
+
+.find-section {
+  @extend .cards-section;
+  background-color: $red-color;
+  &_btn {
+    color: $red-color;
+  }
+}
+
+.near-section {
+  @extend .cards-section;
+  background-color: $gray-background;
+  &_btn {
+    color: $gray-background;
+  }
+}
+
+.anytime-section {
+  @extend .cards-section;
+  background-color: $blue-color;
 }
