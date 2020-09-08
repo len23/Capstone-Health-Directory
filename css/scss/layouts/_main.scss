@@ -4,8 +4,7 @@ main {
 
 .steps_section {
   padding: 3rem 0 0 0;
-  max-width: 100rem;
-  @extend .center-container;
+  @include max-width_center(1130rem);
   h2 {
     color: $red-color;
     text-align: center;

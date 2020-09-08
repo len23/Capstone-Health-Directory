@@ -1,10 +1,10 @@
-.center-container {
-  margin: 0 auto;
+.flex-space-between {
+  display:flex;
+  justify-content: space-between;
 }
 
 .cards-section {
-  display: flex;
-  justify-content: space-between;
+  @extend .flex-space-between;
   align-items: center;
   padding: 4rem 7rem;
   color: $white-color;
@@ -32,5 +32,5 @@
 }
 
 .max-width_cards {
-  @include max-width_center(1130)
+  @include max-width_center(1130rem)
 }
