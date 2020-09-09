@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/1e179ba697.js" crossorigin="anonymous"></script>
+  <title>Results - Health Directory</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-header">
+      <div class="logo-header"><i class="fas fa-map-marker-alt"></i> <span>healthlocator</span></div>
+      <ul class="links-header">
+          <li><i class="fas fa-search"></i> <a href="#">LOCATIONS</a></li>
+          <li><i class="far fa-user"></i><a href="#"> ABOUT</a></li>
+          <li><i class="fas fa-rss"></i> <a href="#">BLOG</a></li>
+          <li><i class="fas fa-bars"></i> <a href="#">MORE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main_results">
+    <section class="filter">
+      <h2>Filter by name, categories, sectors,  :</h2>
+      <form class="filter_form" action="#">
+        <div class="filter_form-field">
+          <label for="">NAME:</label>
+          <input type="text">
+        </div>
+        <div class="filter_form-field">
+          <label for="categories">CATEGORY:</label>
+          <select id="categories" name="categories">
+              <option value=""></option>
+              <option value="general_practice">General Practice</option>
+              <option value="dentist">Dentist</option>
+              <option value="physiotherapy">Physiotherapy</option>
+              <option value="otolaryngologist">Otolaryngologist</option>
+          </select>
+        </div>
+        <div class="filter_form-field">
+          <label for="gender">GENDER:</label>
+          <select id="gender" name="gender">
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="filter_form-field">
+          <label for="sector">SECTOR:</label>
+          <select id="sector" name="sector">
+            <option value=""></option>
+            <option value="north">North</option>
+            <option value="center">Center</option>
+            <option value="south">South</option>
+          </select>
+        </div>      
+        <div class="filter_form-field">
+          <button class="btn filter_form__btn filter-btn_search">Search</button>
+          <button class="btn filter_form__btn filter-btn_clear"><i class="fas fa-eraser"></i> clear filter</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_main">
+      <nav class="footer_nav">
+        <div class="footer_circle">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li class="footer_logo"></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Google +</a></li>
+        </ul>
+      </nav>
+      <div class="footer_contact">
+        <div class="footer_contact-subscribe">
+          <h4>SUBSCRIBE</h4>
+          <form action="">
+            <input type="email" placeholder="you@example.com">
+            <button class="btn btn_footer">send</button>
+          </form>
+        </div>
+        <div class="footer_contact-contact">
+          <h4>CONTACT</h4>
+          <p>
+            Have a question or suggestion<br>
+            <a href="#">info@healthlocator.com</a>
+          </p>
+        </div>
+        <div class="footer_contact-about">
+          <h4>ABOUT</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iure perferendis cumque totam expedita consequuntur numquam.Nostrum, iure perferendis.
+            <a href="#">lorem ipsum</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer_social">
+      <div class="footer_social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-google-play"></i>
+        <i class="fab fa-tumblr"></i>
+      </div>
+      <div class="footer_social-copyright">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.main_results {
+  margin-top: 7rem;
+}
+
+.filter {
+  background-color: $gray-background-2;
+  @extend .flex-space-center;
+  flex-direction: column;
+  padding: 5% 1%;
+  h2 {
+    color: $gray-background;
+    font-weight: $bold;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+  }
+  &_form {
+    @extend .flex-space-between;
+    &-field{
+      &:not(:last-child) {
+        margin-right: 0.3rem;
+      }
+      label {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: $bold;
+        color: $gray-opaque;
+        margin-bottom: 0.4rem;
+      }
+      input, select {
+        border: 1px solid $gray-color;
+        height: 3.3rem;
+        border-radius: 0.4rem;
+      }
+      select {
+        width: 13rem;
+      }
+    }
+    &__btn{
+      color: $white-color;
+      font-weight: $bold;
+      height: 3.2rem;
+      margin-top: 2.5rem;
+      border-radius: 0.4rem;
+      padding: 0 2rem;
+    }
+  }
+  &-btn_search {
+    background-color: $blue-marin;
+  }
+
+  &-btn_clear {
+    background-color: $yellow-dark;
+  }
+}

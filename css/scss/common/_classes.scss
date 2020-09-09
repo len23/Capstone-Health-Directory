@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.flex-space-center {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cards-section {
   @extend .flex-space-between;
   padding: 2rem 7rem;

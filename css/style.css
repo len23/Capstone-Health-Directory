@@ -27,9 +27,14 @@ button {
 .btn, .btn-works {
   border: none; }
 
-.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .footer_nav ul, .footer_social {
+.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .filter_form, .footer_nav ul, .footer_social {
   display: flex;
   justify-content: space-between;
+  align-items: center; }
+
+.flex-space-center, .filter {
+  display: flex;
+  justify-content: center;
   align-items: center; }
 
 .cards-section, .find-section_content, .near-section_content, .anytime-section_content {
@@ -241,6 +246,44 @@ main {
 .rectangle-img {
   width: 27em;
   height: 27rem; }
+
+.main_results {
+  margin-top: 7rem; }
+
+.filter {
+  background-color: #eeeeee;
+  flex-direction: column;
+  padding: 5% 1%; }
+  .filter h2 {
+    color: #98a4a5;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    font-size: 2.8rem; }
+  .filter_form-field:not(:last-child) {
+    margin-right: 0.3rem; }
+  .filter_form-field label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4d5252;
+    margin-bottom: 0.4rem; }
+  .filter_form-field input, .filter_form-field select {
+    border: 1px solid #c2c1c1;
+    height: 3.3rem;
+    border-radius: 0.4rem; }
+  .filter_form-field select {
+    width: 13rem; }
+  .filter_form__btn {
+    color: #fff;
+    font-weight: 700;
+    height: 3.2rem;
+    margin-top: 2.5rem;
+    border-radius: 0.4rem;
+    padding: 0 2rem; }
+  .filter-btn_search {
+    background-color: #457db4; }
+  .filter-btn_clear {
+    background-color: #e5ab5b; }
 
 .footer {
   background-color: #000;
