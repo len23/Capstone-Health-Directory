@@ -38,6 +38,10 @@ button {
   max-width: 133rem;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 768px) {
+    .cards-section, .find-section_content, .near-section_content, .anytime-section_content {
+      justify-content: center;
+      flex-wrap: wrap; } }
   .cards-section h3, .find-section_content h3, .near-section_content h3, .anytime-section_content h3 {
     font-size: 2.2rem;
     margin-bottom: 1.7rem; }
@@ -50,6 +54,9 @@ button {
     border-radius: 0.5rem;
     padding: 1rem 1.3rem;
     font-weight: 600; }
+    @media screen and (max-width: 768px) {
+      .cards-section .btn_cards, .find-section_content .btn_cards, .near-section_content .btn_cards, .anytime-section_content .btn_cards {
+        margin-bottom: 3rem; } }
 
 .max-width_cards {
   max-width: 1130rem;
@@ -64,16 +71,36 @@ button {
   background-color: #e74c3a;
   color: #fff;
   font-size: 1.5rem;
-  align-items: center;
   padding: 2rem 4.5rem; }
-  .nav-header .logo-header {
-    font-size: 2.5rem; }
-  .nav-header .links-header li {
-    display: inline-block; }
-    .nav-header .links-header li:not(:last-child) {
-      margin-right: 2.8rem; }
-    .nav-header .links-header li a {
-      color: #fff; }
+  @media screen and (max-width: 768px) {
+    .nav-header {
+      flex-direction: column;
+      padding: 2rem 1.8rem;
+      font-size: 1.5rem; } }
+
+.logo-header {
+  font-size: 2.5rem; }
+  @media screen and (max-width: 768px) {
+    .logo-header {
+      margin-bottom: 1.8rem; } }
+
+@media screen and (max-width: 768px) {
+  .links-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; } }
+.links-header li {
+  display: inline-block; }
+  .links-header li:not(:last-child) {
+    margin-right: 2.8rem; }
+  @media screen and (max-width: 768px) {
+    .links-header li {
+      margin-right: 0; } }
+  .links-header li a {
+    color: #fff; }
+    @media screen and (max-width: 768px) {
+      .links-header li a {
+        display: none; } }
 
 .banner-header {
   height: 80vh;
@@ -89,10 +116,17 @@ button {
 .info-header-container {
   width: 60%;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .info-header-container {
+      width: 95%; } }
   .info-header-container h1 {
     color: #fff;
     font-size: 2.5rem;
     text-align: left; }
+    @media screen and (max-width: 768px) {
+      .info-header-container h1 {
+        font-size: 1.9rem;
+        text-align: center; } }
 
 .search-header {
   background-color: rgba(194, 193, 193, 0.322);
@@ -100,6 +134,9 @@ button {
   width: 100%;
   border-radius: 1.4rem;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .search-header {
+      padding: 2rem 1rem; } }
   .search-header .form-search label {
     display: block;
     font-size: 1.7rem;
@@ -112,6 +149,8 @@ button {
     width: 85%;
     border: none;
     height: 3.8rem; }
+    .sub-cont input:focus {
+      outline: none; }
   .sub-cont a {
     background-color: #e74c3a;
     padding: 1rem 1.4rem 0;
@@ -121,11 +160,14 @@ button {
     font-size: 1.4rem; }
 
 .btn-works {
+  display: inline-block;
   background-color: #c2c1c1;
   padding: 1.2rem 0.8rem;
   border-radius: 0.4rem;
   font-weight: 500;
-  margin-top: 2.7rem; }
+  font-size: 1.2rem;
+  margin-top: 1.9rem;
+  color: #000; }
 
 main {
   margin-top: 3rem; }
@@ -143,16 +185,13 @@ main {
 
 .steps-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: minmax(1fr,repeat(2,1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
   justify-content: center;
-  gap: 5rem;
   margin-top: 8rem;
-  max-width: 114rem;
+  max-width: 102.4rem;
   margin-left: auto;
   margin-right: auto; }
-  @media screen and (max-width: 1024px) {
-    .steps-container {
-      grid-template-columns: auto; } }
 
 .step {
   text-align: center;
@@ -162,6 +201,9 @@ main {
       max-width: 58rem;
       margin-left: auto;
       margin-right: auto; } }
+  @media screen and (max-width: 768px) {
+    .step {
+      padding: 0; } }
   .step i {
     font-size: 2.5rem; }
   .step h3 {
@@ -172,6 +214,11 @@ main {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 3.6rem; }
+    @media screen and (max-width: 768px) {
+      .step p {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto; } }
 
 .find-section {
   background-color: #e74c3a; }
@@ -203,6 +250,9 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 4rem 7rem 0; }
+    @media screen and (max-width: 768px) {
+      .footer_main {
+        padding: 4rem 3rem 0; } }
   .footer_nav {
     padding: 1.3rem 1rem;
     position: relative; }
@@ -251,6 +301,22 @@ main {
     grid-template-columns: 1.1fr 1fr 1.1fr;
     column-gap: 2rem;
     margin: 4rem 0 2rem; }
+    @media screen and (max-width: 1024px) {
+      .footer_contact {
+        grid-template-columns: 1fr 1fr; }
+        .footer_contact-about {
+          grid-column: 1/3;
+          max-width: 50%;
+          margin-left: auto;
+          margin-right: auto; } }
+    @media screen and (max-width: 768px) {
+      .footer_contact {
+        grid-template-columns: 1fr; }
+        .footer_contact-about {
+          grid-column: 1;
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto; } }
     .footer_contact h4 {
       font-size: 2.2rem;
       margin-bottom: 2.3rem;
@@ -268,10 +334,16 @@ main {
       padding-left: 0.7rem;
       height: 3rem;
       width: 75%; }
+      @media screen and (max-width: 768px) {
+        .footer_contact-subscribe input {
+          display: block;
+          width: 95%;
+          margin: 0 auto; } }
   .footer_social {
     background-color: #292b2b;
     color: #4d5252;
-    padding: 1.7rem 1.5rem; }
+    padding: 1.7rem 1.5rem;
+    flex-wrap: wrap; }
     .footer_social-icons {
       font-size: 1.5rem; }
       .footer_social-icons i {
@@ -291,6 +363,16 @@ main {
   height: 3rem;
   margin-left: -1rem;
   width: 8rem;
-  font-weight: 600; }
+  font-weight: 600;
+  padding-top: 0; }
+  @media screen and (max-width: 768px) {
+    .btn_footer {
+      display: block;
+      margin-top: 1.3rem;
+      width: 25rem;
+      font-size: 1.8rem;
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto; } }
 
 /*# sourceMappingURL=style.css.map */

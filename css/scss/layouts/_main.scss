@@ -15,14 +15,11 @@ main {
 
 .steps-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  /* grid-template-columns: minmax(1fr,repeat(2,1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
   justify-content: center; 
-  gap: 5rem;
   margin-top: 8rem;
-  @include max-width_center(114rem);
-  @media screen and (max-width: 1024px) { 
-    grid-template-columns: auto;
-  }
+  @include max-width_center(102.4rem);
 }
 
 .step {
@@ -30,6 +27,9 @@ main {
   padding: 0 9rem;
   @media screen and (max-width: 1024px) { 
     @include max-width_center(58rem);
+  }
+  @media screen and (max-width: 768px) { 
+    padding: 0;
   }
   i {
     font-size: 2.5rem;
@@ -43,6 +43,9 @@ main {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 3.6rem;
+    @media screen and (max-width: 768px) { 
+      @include max-width_center(30rem);
+    }
   }
 }
 

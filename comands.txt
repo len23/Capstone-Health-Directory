@@ -1,3 +1,4 @@
 npx stylelint "**/*.{css,scss}"
 npx hint .
 sass --watch app/sass:public/stylesheets
+sass --watch css/scss/main_style.scss:css/style.css

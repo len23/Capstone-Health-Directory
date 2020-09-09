@@ -3,23 +3,44 @@
   color: $white-color;
   font-size: 1.5rem;
   @extend .flex-space-between;
-  align-items: center;
   padding: 2rem 4.5rem;
-  .logo-header{
-    font-size: 2.5rem;
-  }
-  .links-header {
-    li{
-      display: inline-block;
-      &:not(:last-child) {
-        margin-right: 2.8rem;
-      }
-      a {
-        color: $white-color
-      }
-    }
+  @media screen and (max-width:768px){
+    flex-direction: column;
+    padding: 2rem 1.8rem;
+    font-size: 1.5rem;
   }
 }
+
+.logo-header{
+  font-size: 2.5rem;
+  @media screen and (max-width:768px){
+   margin-bottom: 1.8rem;
+  }
+}
+
+.links-header {
+  @media screen and (max-width:768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  li{
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2.8rem;
+    }
+    @media screen and (max-width:768px) {
+      margin-right: 0;
+    }
+    a {
+      color: $white-color;
+      @media screen and (max-width:768px){
+       display: none;
+       }
+    }
+  } 
+}
+
 .banner-header {
   height: 80vh;
   background-image: linear-gradient(90deg, rgba(24, 23, 26, 0.8) 8%, rgba(46, 46, 48, 0.7) 58%), url('../../../images/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg');
@@ -34,10 +55,17 @@
 .info-header-container {
   width: 60%;
   text-align: center;
+  @media screen and (max-width:768px){
+    width: 95%;
+  }
   h1{
     color: $white-color;
     font-size: 2.5rem;
     text-align: left;
+    @media screen and (max-width:768px){
+      font-size: 1.9rem;
+      text-align: center;
+    }
   }
 }
 .search-header {
@@ -46,6 +74,9 @@
   width: 100%;
   border-radius: 1.4rem;
   text-align: left;
+  @media screen and (max-width:768px){
+    padding:2rem 1rem;
+  }
   .form-search {
     label {
       display: block;
@@ -62,6 +93,9 @@
     width: 85%;
     border:none;
     height: 3.8rem;
+    &:focus{
+      outline:none;
+    }
    }
    a {
      background-color: $red-color;
@@ -75,9 +109,12 @@
 
 .btn-works {
   @extend .btn;
+  display: inline-block;
   background-color: $gray-color;
   padding: 1.2rem 0.8rem;
   border-radius: 0.4rem;
   font-weight: 500;
-  margin-top: 2.7rem;
+  font-size: 1.2rem;
+  margin-top: 1.9rem;
+  color: $black-color
 }

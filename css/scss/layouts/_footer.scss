@@ -4,6 +4,9 @@
   &_main {
     @include max-width_center(133rem);
     padding: 4rem 7rem 0;
+    @media screen and (max-width:768px) {
+      padding: 4rem 3rem 0;
+    }
   }
   &_nav {
     @extend .footer_border;
@@ -62,7 +65,21 @@
     grid-template-columns: 1.1fr 1fr 1.1fr;
     column-gap: 2rem;
     margin: 4rem 0 2rem;
+    @media screen and (max-width:1024px) {
+      grid-template-columns: 1fr 1fr;
+      &-about{
+        grid-column: 1/3;
+        @include max-width_center(50%);
+    }
+  }
+    @media screen and (max-width:768px) {
+      grid-template-columns: 1fr;
 
+      &-about{
+        grid-column: 1;
+        @include max-width_center(100%);
+    }
+    }
     h4 {
       font-size: 2.2rem;
       margin-bottom: 2.3rem;
@@ -84,6 +101,11 @@
         padding-left: 0.7rem;
         height: 3rem;
         width: 75%;
+        @media screen and (max-width:768px) { 
+          display: block;
+          width: 95%;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -92,6 +114,7 @@
     color: $gray-opaque;
     @extend .flex-space-between;
     padding: 1.7rem 1.5rem;
+    flex-wrap: wrap;
     &-icons {
       font-size: 1.5rem;
       i {
@@ -120,4 +143,12 @@
   margin-left: -1rem;
   width: 8rem;
   font-weight: $semi-bold;
+  padding-top: 0;
+  @media screen and (max-width:768px) { 
+    display: block;
+    margin-top: 1.3rem;
+    width: 25rem;
+    font-size: 1.8rem;
+    @include max-width_center(60%);
+  }
 }
