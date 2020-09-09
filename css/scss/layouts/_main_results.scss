@@ -1,5 +1,8 @@
 .main_results {
   margin-top: 7rem;
+  @media screen and(max-width:768px){
+    margin-top: 3rem;
+  }
 }
 
 .filter {
@@ -12,6 +15,9 @@
     font-weight: $bold;
     margin-bottom: 4rem;
     font-size: 2.8rem;
+    @media screen and(max-width:768px){
+      text-align: center;
+    }
   }
   &_form {
     @extend .flex-space-between;
@@ -22,6 +28,10 @@
     &-field{
       &:not(:last-child) {
         margin-right: 0.3rem;
+      }
+      @media screen and(max-width:768px) {
+        width: 100%;
+        padding: 0 2rem;
       }
       label {
         display: block;
@@ -34,6 +44,9 @@
         border: 1px solid $gray-color;
         height: 3.3rem;
         border-radius: 0.4rem;
+        @media screen and(max-width:768px) { 
+          width: 100% !important;
+        }
       }
       select {
         width: 13rem;

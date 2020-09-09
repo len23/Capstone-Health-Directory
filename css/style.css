@@ -88,6 +88,8 @@ button {
   @media screen and (max-width: 768px) {
     .logo-header {
       margin-bottom: 1.8rem; } }
+  .logo-header a {
+    color: #fff; }
 
 @media screen and (max-width: 768px) {
   .links-header {
@@ -249,6 +251,9 @@ main {
 
 .main_results {
   margin-top: 7rem; }
+  @media screen and (max-width: 768px) {
+    .main_results {
+      margin-top: 3rem; } }
 
 .filter {
   background-color: #eeeeee;
@@ -259,12 +264,19 @@ main {
     font-weight: 700;
     margin-bottom: 4rem;
     font-size: 2.8rem; }
+    @media screen and (max-width: 768px) {
+      .filter h1 {
+        text-align: center; } }
   @media screen and (max-width: 1024px) {
     .filter_form {
       flex-wrap: wrap;
       justify-content: center; } }
   .filter_form-field:not(:last-child) {
     margin-right: 0.3rem; }
+  @media screen and (max-width: 768px) {
+    .filter_form-field {
+      width: 100%;
+      padding: 0 2rem; } }
   .filter_form-field label {
     display: block;
     font-size: 1.8rem;
@@ -275,6 +287,9 @@ main {
     border: 1px solid #c2c1c1;
     height: 3.3rem;
     border-radius: 0.4rem; }
+    @media screen and (max-width: 768px) {
+      .filter_form-field input, .filter_form-field select {
+        width: 100% !important; } }
   .filter_form-field select {
     width: 13rem; }
   .filter_form__btn {
