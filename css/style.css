@@ -254,11 +254,15 @@ main {
   background-color: #eeeeee;
   flex-direction: column;
   padding: 5% 1%; }
-  .filter h2 {
+  .filter h1 {
     color: #98a4a5;
     font-weight: 700;
     margin-bottom: 4rem;
     font-size: 2.8rem; }
+  @media screen and (max-width: 1024px) {
+    .filter_form {
+      flex-wrap: wrap;
+      justify-content: center; } }
   .filter_form-field:not(:last-child) {
     margin-right: 0.3rem; }
   .filter_form-field label {
@@ -284,6 +288,54 @@ main {
     background-color: #457db4; }
   .filter-btn_clear {
     background-color: #e5ab5b; }
+
+.results {
+  padding: 6rem 0 10rem; }
+  @media screen and (max-width: 768px) {
+    .results {
+      padding: 2rem 0 10rem; } }
+  .results h2 {
+    color: #4d5252;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500; }
+    @media screen and (max-width: 768px) {
+      .results h2 {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3rem; } }
+  .results-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(38.4rem, 1fr));
+    max-width: 125.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3rem;
+    padding: 0 2rem; }
+    @media screen and (max-width: 768px) {
+      .results-grid {
+        grid-template-columns: 1fr; } }
+    .results-grid_item {
+      background-image: linear-gradient(to bottom, rgba(216, 94, 75, 0.87), rgba(216, 94, 75, 0.82)), url("../images/dr-results.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 36rem;
+      padding: 6rem 4rem; }
+      @media screen and (max-width: 768px) {
+        .results-grid_item {
+          padding: 8rem 1.5rem;
+          text-align: center; } }
+      .results-grid_item p {
+        font-size: 2.3rem;
+        color: #fff;
+        text-transform: uppercase; }
+        .results-grid_item p span {
+          font-weight: 700; }
+        @media screen and (max-width: 768px) {
+          .results-grid_item p {
+            font-size: 1.8rem; } }
 
 .footer {
   background-color: #000;
