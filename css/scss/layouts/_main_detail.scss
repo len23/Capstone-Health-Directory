@@ -1,0 +1,41 @@
+.body-detail {
+  background-color: $gray-background-2;
+  margin-top: 0;
+}
+.detail {
+  @include max-width_center(125.4rem);
+  background-color: $white-color;
+  padding: 1.4rem 3rem;
+  h1 {
+    font-size: 2.5rem;
+    color: $red-color;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.8rem;
+    &_item {
+      text-transform: uppercase;
+      border: 2px solid $gray-background;
+      padding: 0.8rem 1rem;
+      text-align: center;
+      span {
+        color: $blue-color;
+
+      }
+    }
+  }
+  &-data {
+    text-align: right;
+    &-btn {
+      background-color: $blue-marin;
+      color: $white-color;
+      margin: 1.4rem 0;
+      padding: 0.7rem 2rem;
+    }
+    ul {
+      @extend .flex-space-between;
+    }
+    
+  }
+}

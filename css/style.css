@@ -27,7 +27,7 @@ button {
 .btn, .btn-works {
   border: none; }
 
-.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .filter_form, .footer_nav ul, .footer_social {
+.flex-space-between, .cards-section, .find-section_content, .near-section_content, .anytime-section_content, .nav-header, .filter_form, .detail-data ul, .footer_nav ul, .footer_social {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -351,6 +351,38 @@ main {
         @media screen and (max-width: 768px) {
           .results-grid_item p {
             font-size: 1.8rem; } }
+
+.body-detail {
+  background-color: #eeeeee;
+  margin-top: 0; }
+
+.detail {
+  max-width: 125.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 1.4rem 3rem; }
+  .detail h1 {
+    font-size: 2.5rem;
+    color: #e74c3a; }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem; }
+    .detail-grid_item {
+      text-transform: uppercase;
+      border: 2px solid #98a4a5;
+      padding: 0.8rem 1rem;
+      text-align: center; }
+      .detail-grid_item span {
+        color: #509bd7; }
+  .detail-data {
+    text-align: right; }
+    .detail-data-btn {
+      background-color: #457db4;
+      color: #fff;
+      margin: 1.4rem 0;
+      padding: 0.7rem 2rem; }
 
 .footer {
   background-color: #000;
