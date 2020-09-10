@@ -4,8 +4,10 @@
 
 .main-detail {
   @include max-width_center(125.4rem);
+
   background-color: $white-color;
-  @media screen and (max-width:1024px) {
+
+  @media screen and (max-width: 1024px) {
     padding: 0 4rem;
   }
 }
@@ -13,68 +15,84 @@
 .detail {
   background-color: $white-color;
   padding: 1.4rem 3rem;
-  box-shadow: 0px 0px 16px 2px $gray-background;
+  box-shadow: 0 0 16px 2px $gray-background;
+
   h1 {
     font-size: 2.5rem;
     color: $red-color;
   }
+
   &-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.8rem;
-    @media screen and (max-width:1024px) {
-      grid-template-columns: repeat(2,1fr);
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
     }
-    @media screen and (max-width:768px) {
-      grid-template-columns: repeat(1,1fr);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
     }
+
     &_item {
       text-transform: uppercase;
       border: 2px solid $gray-background;
       padding: 0.8rem 1rem;
       text-align: center;
-      box-shadow: 0px 0px 8px 0px $gray-background;
-      span, a {
+      box-shadow: 0 0 8px 0 $gray-background;
+
+      &--span,
+      a {
         color: $blue-color;
       }
+
       a {
         text-transform: lowercase;
       }
     }
   }
+
   &-data {
     text-align: right;
-    @media screen and (max-width:768px){
+
+    @media screen and (max-width: 768px) {
       text-align: center;
     }
+
     &-btn {
       background-color: $blue-marin;
       color: $white-color;
       margin: 1.4rem 0;
       padding: 0.7rem 2rem;
     }
+
     ul {
       @extend .flex-space-end;
-      @media screen and (max-width:768px){
+
+      @media screen and (max-width: 768px) {
         justify-content: center;
         flex-wrap: wrap;
       }
-      li {
-        
-        font-weight: $semi-bold;
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        @media screen and (max-width:768px) {
-          width: 12rem;
-          margin: 0 0 1rem 0;
-        }
-          margin-right: 5rem;
-        i{
-          color:$blue-color;
-          margin-right: 0.7rem;
-          font-weight: $semi-bold;
-        }
+    }
+
+    &_link {
+      font-weight: $semi-bold;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+
+      @media screen and (max-width: 768px) {
+        width: 12rem;
+        margin: 0 0 1rem 0;
       }
+
+      margin-right: 5rem;
+    }
+
+    i {
+      color: $blue-color;
+      margin-right: 0.7rem;
+      font-weight: $semi-bold;
     }
   }
 }
@@ -84,12 +102,14 @@
     font-size: 1.5rem;
     padding: 3rem 1rem;
   }
+
   &-btn {
     width: 100%;
     text-align: left;
     padding: 2rem 4rem;
     letter-spacing: 0.7rem;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
       padding: 2rem 0;
       text-align: center;
     }
@@ -98,6 +118,7 @@
 
 .map {
   padding: 3rem 0;
+
   h3 {
     color: $red-color;
     text-align: center;
@@ -106,7 +127,7 @@
     margin-bottom: 2rem;
   }
 
-  img{
+  img {
     width: 100%;
   }
 }

@@ -25,13 +25,13 @@
       <h1>Filter by name, categories, sectors:</h1>
       <form class="filter_form" action="#">
         <div class="filter_form-field">
-          <label for="">NAME:</label>
-          <input type="text">
+          <label for="name-result">NAME:</label>
+          <input id="name-result" type="text">
         </div>
         <div class="filter_form-field">
           <label for="categories">CATEGORY:</label>
           <select id="categories" name="categories">
-              <option value=""></option>
+              <option value="null">&nbsp;</option>
               <option value="general_practice">General Practice</option>
               <option value="dentist">Dentist</option>
               <option value="physiotherapy">Physiotherapy</option>
@@ -41,7 +41,7 @@
         <div class="filter_form-field">
           <label for="gender">GENDER:</label>
           <select id="gender" name="gender">
-            <option value=""></option>
+            <option value="null">&nbsp;</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -49,15 +49,15 @@
         <div class="filter_form-field">
           <label for="sector">SECTOR:</label>
           <select id="sector" name="sector">
-            <option value=""></option>
+            <option value="null">&nbsp;</option>
             <option value="north">North</option>
             <option value="center">Center</option>
             <option value="south">South</option>
           </select>
         </div>      
         <div class="filter_form-field">
-          <button class="btn filter_form__btn filter-btn_search">Search</button>
-          <button class="btn filter_form__btn filter-btn_clear"><i class="fas fa-eraser"></i> clear filter</button>
+          <button type="button" class="btn filter_form__btn filter-btn_search">Search</button>
+          <button type="button" class="btn filter_form__btn filter-btn_clear"><i class="fas fa-eraser"></i> clear filter</button>
         </div>
       </form>
     </section>
@@ -133,9 +133,9 @@
       <div class="footer_contact">
         <div class="footer_contact-subscribe">
           <h4>SUBSCRIBE</h4>
-          <form action="">
+          <form action="#">
             <input type="email" placeholder="you@example.com">
-            <button class="btn btn_footer">send</button>
+            <button type="submit" class="btn btn_footer">send</button>
           </form>
         </div>
         <div class="footer_contact-contact">

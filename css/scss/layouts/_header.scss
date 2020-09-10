@@ -2,46 +2,56 @@
   background-color: $red-color;
   color: $white-color;
   font-size: 1.5rem;
+
   @extend .flex-space-between;
+
   padding: 2rem 4.5rem;
-  @media screen and (max-width:768px){
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 2rem 1.8rem;
     font-size: 1.5rem;
   }
 }
 
-.logo-header{
+.logo-header {
   font-size: 2.5rem;
-  @media screen and (max-width:768px){
-   margin-bottom: 1.8rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1.8rem;
   }
+
   a {
     color: $white-color;
   }
 }
 
 .links-header {
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  li{
+
+  li {
     display: inline-block;
+
     &:not(:last-child) {
       margin-right: 2.8rem;
     }
-    @media screen and (max-width:768px) {
+
+    @media screen and (max-width: 768px) {
       margin-right: 0;
     }
-    a {
-      color: $white-color;
-      @media screen and (max-width:768px){
-       display: none;
-       }
+  }
+
+  a {
+    color: $white-color;
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
-  } 
+  }
 }
 
 .banner-header {
@@ -55,63 +65,74 @@
   align-items: center;
   justify-content: center;
 }
+
 .info-header-container {
   width: 60%;
   text-align: center;
-  @media screen and (max-width:768px){
+
+  @media screen and (max-width: 768px) {
     width: 95%;
   }
-  h1{
+
+  h1 {
     color: $white-color;
     font-size: 2.5rem;
     text-align: left;
-    @media screen and (max-width:768px){
+
+    @media screen and (max-width: 768px) {
       font-size: 1.9rem;
       text-align: center;
     }
   }
 }
+
 .search-header {
   background-color: $gray-color-transparency;
   padding: 5rem;
   width: 100%;
   border-radius: 1.4rem;
   text-align: left;
-  @media screen and (max-width:768px){
-    padding:2rem 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 1rem;
   }
-  .form-search {
-    label {
-      display: block;
-      font-size: 1.7rem;
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-    }
+}
+
+.form-search {
+  label {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
   }
 }
 
 .sub-cont {
   display: flex;
-  input {
+
+  &_input {
     width: 85%;
-    border:none;
+    border: none;
     height: 3.8rem;
-    &:focus{
-      outline:none;
+
+    &:focus {
+      outline: none;
     }
-   }
-   a {
-     background-color: $red-color;
-     padding: 1rem 1.4rem 0 ;
-     color: $white-color;
-     display: inline-block;
-     margin-left: -0.4rem;  
-     font-size: 1.4rem;
-    }
+  }
+
+  a {
+    background-color: $red-color;
+    padding: 1rem 1.4rem 0;
+    color: $white-color;
+    display: inline-block;
+    margin-left: -0.4rem;
+    font-size: 1.4rem;
+  }
 }
 
 .btn-works {
   @extend .btn;
+
   display: inline-block;
   background-color: $gray-color;
   padding: 1.2rem 0.8rem;
@@ -119,5 +140,5 @@
   font-weight: 500;
   font-size: 1.2rem;
   margin-top: 1.9rem;
-  color: $black-color
+  color: $black-color;
 }
