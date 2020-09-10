@@ -34,8 +34,11 @@
       padding: 0.8rem 1rem;
       text-align: center;
       box-shadow: 0px 0px 8px 0px $gray-background;
-      span {
+      span, a {
         color: $blue-color;
+      }
+      a {
+        text-transform: lowercase;
       }
     }
   }
@@ -79,7 +82,7 @@
 .description {
   p {
     font-size: 1.5rem;
-    padding: 0 1rem;
+    padding: 3rem 1rem;
   }
   &-btn {
     width: 100%;

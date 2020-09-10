@@ -392,8 +392,10 @@ main {
       padding: 0.8rem 1rem;
       text-align: center;
       box-shadow: 0px 0px 8px 0px #98a4a5; }
-      .detail-grid_item span {
+      .detail-grid_item span, .detail-grid_item a {
         color: #509bd7; }
+      .detail-grid_item a {
+        text-transform: lowercase; }
   .detail-data {
     text-align: right; }
     @media screen and (max-width: 768px) {
@@ -424,7 +426,7 @@ main {
 
 .description p {
   font-size: 1.5rem;
-  padding: 0 1rem; }
+  padding: 3rem 1rem; }
 .description-btn {
   width: 100%;
   text-align: left;
