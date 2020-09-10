@@ -1,11 +1,19 @@
 .body-detail {
-  background-color: $gray-background-2;
   margin-top: 0;
 }
-.detail {
+
+.main-detail {
   @include max-width_center(125.4rem);
   background-color: $white-color;
+  @media screen and (max-width:1024px) {
+    padding: 0 4rem;
+  }
+}
+
+.detail {
+  background-color: $white-color;
   padding: 1.4rem 3rem;
+  box-shadow: 0px 0px 16px 2px $gray-background;
   h1 {
     font-size: 2.5rem;
     color: $red-color;
@@ -14,19 +22,28 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 0.8rem;
+    @media screen and (max-width:1024px) {
+      grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (max-width:768px) {
+      grid-template-columns: repeat(1,1fr);
+    }
     &_item {
       text-transform: uppercase;
       border: 2px solid $gray-background;
       padding: 0.8rem 1rem;
       text-align: center;
+      box-shadow: 0px 0px 8px 0px $gray-background;
       span {
         color: $blue-color;
-
       }
     }
   }
   &-data {
     text-align: right;
+    @media screen and (max-width:768px){
+      text-align: center;
+    }
     &-btn {
       background-color: $blue-marin;
       color: $white-color;
@@ -34,8 +51,59 @@
       padding: 0.7rem 2rem;
     }
     ul {
-      @extend .flex-space-between;
+      @extend .flex-space-end;
+      @media screen and (max-width:768px){
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      li {
+        
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        @media screen and (max-width:768px) {
+          width: 12rem;
+          margin: 0 0 1rem 0;
+        }
+          margin-right: 5rem;
+        i{
+          color:$blue-color;
+          margin-right: 0.7rem;
+          font-weight: $semi-bold;
+        }
+      }
     }
-    
+  }
+}
+
+.description {
+  p {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  &-btn {
+    width: 100%;
+    text-align: left;
+    padding: 2rem 4rem;
+    letter-spacing: 0.7rem;
+    @media screen and (max-width: 768px){
+      padding: 2rem 0;
+      text-align: center;
+    }
+  }
+}
+
+.map {
+  padding: 3rem 0;
+  h3 {
+    color: $red-color;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $semi-bold;
+    margin-bottom: 2rem;
+  }
+
+  img{
+    width: 100%;
   }
 }
