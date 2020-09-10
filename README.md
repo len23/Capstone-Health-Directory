@@ -2,7 +2,7 @@
 
 # Capstone Project About Doctors Directory
 
-> A directory about Doctors you can find in your city
+> A directory about Doctors you can find in your city, this project is based in Mathew Njuguna and Sam Achola project.
 
 
 ![Alt text](./images/home-screenshot.png "Screenshot")
@@ -34,4 +34,8 @@ Contributions, issues and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+##
+
+All rights reserved to  Mathew Njuguna, Sam Achola project and Lenin Montalvo
 
