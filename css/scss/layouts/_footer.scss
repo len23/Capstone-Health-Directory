@@ -86,13 +86,6 @@
       @extend .flex-space-between;
 
       li {
-        a {
-          color: $white-color;
-          font-size: 1.8rem;
-          text-transform: uppercase;
-          font-weight: $semi-bold;
-        }
-
         @media screen and (max-width: 1024px) {
           &:not(:last-child) {
             margin-right: 2rem;
@@ -106,6 +99,13 @@
         flex-wrap: wrap;
         justify-content: center;
       }
+    }
+
+    a {
+      color: $white-color;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: $semi-bold;
     }
   }
 
@@ -166,6 +166,10 @@
         font-size: 1.1rem;
         margin-top: 2rem;
         margin-bottom: 0;
+      }
+
+      a {
+        color: $gray-background;
       }
     }
   }
