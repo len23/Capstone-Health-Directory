@@ -35,7 +35,7 @@ If you want to modify some scss files and work on them, first [install sass](htt
 
 ## Acknowledgment
 
-This project was built based on the [Mathew Njuguna](https://www.behance.net/mathewnjuguna) and [Sam Achola](https://www.behance.net/aweSam) design available io [Behance](https://www.behance.net/gallery/25563385/PatashuleKE). Thanks to them this project was possible.
+This project was built based on the [Mathew Njuguna](https://www.behance.net/mathewnjuguna) and [Sam Achola](https://www.behance.net/aweSam) design available on [Behance](https://www.behance.net/gallery/25563385/PatashuleKE). Thanks to them this project was possible.
 
 ## 🤝 Contributing
 
