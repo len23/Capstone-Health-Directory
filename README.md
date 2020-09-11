@@ -15,12 +15,15 @@
 
 [Live Demo Link]( https://len23.github.io/Capstone-Health-Directory/)
 
+## Video Explanation
+
+[Video Explanation Link]( https://www.loom.com/share/a80095435d734ce6b4da080a23b11146)
 
 ## Getting Started
 
 The project is public.
 
-## Authors
+## Author
 
 👤 **Lenin Montalvo**
 - Github: [@len23](https://github.com/len23)
@@ -37,5 +40,5 @@ Give a ⭐️ if you like this project!
 
 ##
 
-All rights reserved to  Mathew Njuguna, Sam Achola project and Lenin Montalvo
+All rights reserved to Mathew Njuguna, Sam Achola and Lenin Montalvo.
 

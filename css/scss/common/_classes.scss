@@ -27,6 +27,7 @@
   @media screen and (max-width: 768px) {
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 
   h3 {
