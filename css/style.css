@@ -80,7 +80,7 @@ button {
   border-bottom: 2px solid #4d5252; }
 
 .nav-header {
-  background-color: #e74c3a;
+  background-color: #d35649;
   color: #fff;
   font-size: 1.5rem;
   padding: 2rem 4.5rem; }
@@ -177,7 +177,7 @@ button {
     .sub-cont_input:focus {
       outline: none; }
   .sub-cont a {
-    background-color: #e74c3a;
+    background-color: #d35649;
     padding: 1rem 1.4rem 0;
     color: #fff;
     display: inline-block;
@@ -211,7 +211,7 @@ main {
   margin-left: auto;
   margin-right: auto; }
   .steps_section h2 {
-    color: #e74c3a;
+    color: #d35649;
     text-align: center;
     font-size: 2rem;
     font-weight: 700; }
@@ -254,9 +254,9 @@ main {
         margin-right: auto; } }
 
 .find-section {
-  background-color: #e74c3a; }
+  background-color: #d35649; }
   .find-section_btn {
-    color: #e74c3a; }
+    color: #d35649; }
 
 .near-section {
   background-color: #98a4a5; }
@@ -398,7 +398,7 @@ main {
   box-shadow: 0 0 16px 2px #98a4a5; }
   .detail h1 {
     font-size: 2.5rem;
-    color: #e74c3a; }
+    color: #d35649; }
   .detail-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -464,7 +464,7 @@ main {
 .map {
   padding: 3rem 0; }
   .map h3 {
-    color: #e74c3a;
+    color: #d35649;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -513,7 +513,7 @@ main {
       color: #98a4a5;
       text-align: center; }
     .footer_contact a {
-      color: #e74c3a; }
+      color: #d35649; }
     .footer_contact-subscribe input {
       background-color: transparent;
       border: 2px solid #4d5252;
