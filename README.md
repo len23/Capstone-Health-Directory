@@ -23,7 +23,7 @@
 
 To start this project open either on a server or a browser the index.html file.
 
-If you want to modify some scss files and work on them, first [install sass] (https://sass-lang.com/install)on your local environment and then run the sass --watch css/scss/main_style.scss:css/style.css command in order to compile the scss files into a css file.
+If you want to modify some scss files and work on them, first [install sass](https://sass-lang.com/install/) on your local environment and then run the sass --watch css/scss/main_style.scss:css/style.css command in order to compile the scss files into a css file.
 
 
 ## Author
@@ -32,6 +32,10 @@ If you want to modify some scss files and work on them, first [install sass] (ht
 - Github: [@len23](https://github.com/len23)
 - Twitter: [@lenon468](https://twitter.com/lenon468)
 - LinkedIn: [Lenin Montalvo](https://www.linkedin.com/in/lenin-montalvo-77660b1b2/)
+
+## Acknowledgment
+
+This project was built based on the [Mathew Njuguna](https://www.behance.net/mathewnjuguna) and [Sam Achola](https://www.behance.net/aweSam) design available io [Behance](https://www.behance.net/gallery/25563385/PatashuleKE). Thanks to them this project was possible.
 
 ## 🤝 Contributing
 
