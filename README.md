@@ -21,9 +21,9 @@
 
 ## Getting Started
 
-To start this project open either on a server or a browser the index.html file.
+- To start this project open either on a server or a browser the index.html file.
 
-If you want to modify some scss files and work on them, first [install sass](https://sass-lang.com/install/) on your local environment and then run the sass --watch css/scss/main_style.scss:css/style.css command in order to compile the scss files into a css file.
+- If you want to modify some scss files and work on them, first [install sass](https://sass-lang.com/install/) on your local environment and then run the sass --watch css/scss/main_style.scss:css/style.css command in order to compile the scss files into a css file.
 
 
 ## Author
