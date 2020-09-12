@@ -1,0 +1,101 @@
+main {
+  margin-top: 3rem;
+}
+
+.steps_section {
+  padding: 3rem 0 5rem 0;
+
+  @include max-width_center(1130rem);
+
+  h2 {
+    color: $red-color;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: $bold;
+  }
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+  justify-content: center;
+  margin-top: 8rem;
+
+  @include max-width_center(102.4rem);
+}
+
+.step {
+  text-align: center;
+  padding: 0 9rem;
+
+  @media screen and (max-width: 1024px) {
+    @include max-width_center(58rem);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3.6rem;
+
+    @media screen and (max-width: 768px) {
+      @include max-width_center(30rem);
+    }
+  }
+}
+
+.find-section {
+  background-color: $red-color;
+
+  &_content {
+    @extend .cards-section;
+  }
+
+  &_btn {
+    color: $red-color;
+  }
+}
+
+.near-section {
+  background-color: $gray-background;
+
+  &_content {
+    @extend .cards-section;
+  }
+
+  &_btn {
+    color: $gray-background;
+  }
+}
+
+.anytime-section {
+  background-color: $blue-color;
+
+  &_content {
+    @extend .cards-section;
+  }
+}
+
+.circle-img {
+  width: 27em;
+  height: 27rem;
+  border-radius: 50%;
+}
+
+.rectangle-img {
+  width: 27em;
+  height: 27rem;
+}

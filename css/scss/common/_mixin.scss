@@ -1,0 +1,11 @@
+@mixin max-width_center($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin circle($width,$size) {
+  width: $width;
+  height: $size;
+  border-radius: 50%;
+}

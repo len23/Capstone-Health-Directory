@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/1e179ba697.js" crossorigin="anonymous"></script>
+  <title>Results - Health Directory</title>
+</head>
+<body>
+  <header>
+    <nav class="nav-header">
+      <div class="logo-header"><a href="../index.html"><i class="fas fa-map-marker-alt"></i> <span>healthlocator</span></a></div>
+      <ul class="links-header">
+          <li><i class="fas fa-search"></i> <a href="#">LOCATIONS</a></li>
+          <li><i class="far fa-user"></i><a href="#"> ABOUT</a></li>
+          <li><i class="fas fa-rss"></i> <a href="#">BLOG</a></li>
+          <li><i class="fas fa-bars"></i> <a href="#">MORE</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main_results">
+    <section class="filter">
+      <h1>Filter by name, categories, sectors:</h1>
+      <form class="filter_form" action="#">
+        <div class="filter_form-field">
+          <label for="name-result">NAME:</label>
+          <input id="name-result" type="text">
+        </div>
+        <div class="filter_form-field">
+          <label for="categories">CATEGORY:</label>
+          <select id="categories" name="categories">
+              <option value="null">&nbsp;</option>
+              <option value="general_practice">General Practice</option>
+              <option value="dentist">Dentist</option>
+              <option value="physiotherapy">Physiotherapy</option>
+              <option value="otolaryngologist">Otolaryngologist</option>
+          </select>
+        </div>
+        <div class="filter_form-field">
+          <label for="gender">GENDER:</label>
+          <select id="gender" name="gender">
+            <option value="null">&nbsp;</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="filter_form-field">
+          <label for="sector">SECTOR:</label>
+          <select id="sector" name="sector">
+            <option value="null">&nbsp;</option>
+            <option value="north">North</option>
+            <option value="center">Center</option>
+            <option value="south">South</option>
+          </select>
+        </div>      
+        <div class="filter_form-field">
+          <button type="button" class="btn filter_form__btn filter-btn_search">Search</button>
+          <button type="button" class="btn filter_form__btn filter-btn_clear"><i class="fas fa-eraser"></i> clear filter</button>
+        </div>
+      </form>
+    </section>
+    <section class="results">
+      <h2>Search Results Found 7 health centers</h2>
+      <div class="results-grid">
+        <a href="./point-detailed.html">
+          <div class="results-grid_item">
+            <p><span>Name:</span> Danilo Mantilla</p>
+            <p><span>Specialist:</span> Otorhinoalringology</p>
+            <p><span>Address:</span> Av. America</p>
+            <p><span>Phone:</span> 0965465478</p>
+          </div>
+        </a>
+        <div class="results-grid_item">
+          <p><span>Name:</span> Lenin Montalvo</p>
+          <p><span>Specialist:</span> General Practice</p>
+          <p><span>Address:</span> Calderón</p>
+          <p><span>Phone:</span> 0965465478</p>
+        </div>
+        <div class="results-grid_item">
+          <p><span>Name:</span> Lenin Montalvo</p>
+          <p><span>Specialist:</span> General Practice</p>
+          <p><span>Address:</span> Calderón</p>
+          <p><span>Phone:</span> 0965465478</p>
+        </div>
+        <div class="results-grid_item">
+          <p><span>Name:</span> Lenin Montalvo</p>
+          <p><span>Specialist:</span> General Practice</p>
+          <p><span>Address:</span> Calderón</p>
+          <p><span>Phone:</span> 0965465478</p>
+        </div>
+        <div class="results-grid_item">
+          <p><span>Name:</span> Lenin Montalvo</p>
+          <p><span>Specialist:</span> General Practice</p>
+          <p><span>Address:</span> Calderón</p>
+          <p><span>Phone:</span> 0965465478</p>
+        </div>
+        <div class="results-grid_item">
+          <p><span>Name:</span> Lenin Montalvo</p>
+          <p><span>Specialist:</span> General Practice</p>
+          <p><span>Address:</span> Calderón</p>
+          <p><span>Phone:</span> 0965465478</p>
+        </div>
+        <div class="results-grid_item">
+          <p><span>Name:</span> Lenin Montalvo</p>
+          <p><span>Specialist:</span> General Practice</p>
+          <p><span>Address:</span> Calderón</p>
+          <p><span>Phone:</span> 0965465478</p>
+        </div>
+      
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_main">
+      <nav class="footer_nav">
+        <div class="footer_circle">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li class="footer_logo"></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Google +</a></li>
+        </ul>
+      </nav>
+      <div class="footer_contact">
+        <div class="footer_contact-subscribe">
+          <h4>SUBSCRIBE</h4>
+          <form action="#">
+            <input type="email" placeholder="you@example.com">
+            <button type="submit" class="btn btn_footer">send</button>
+          </form>
+        </div>
+        <div class="footer_contact-contact">
+          <h4>CONTACT</h4>
+          <p>
+            Have a question or suggestion<br>
+            <a href="#" rel="noopener">info@healthlocator.com</a>
+          </p>
+        </div>
+        <div class="footer_contact-about">
+          <h4>ABOUT</h4>
+          <p>
+            Healthlocator is a project that was built based on the needs the population has in the actual crisis.  In these times a pharmacy, hospital, clinic, or particular doctor is needed when having some covid19 or another health issue that requires special attention and with this application, we provide you a help to solve your needs.  
+            <a href="#">https://www.who.int/home</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer_social">
+      <div class="footer_social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-google-play"></i>
+        <i class="fab fa-tumblr"></i>
+      </div>
+      <div class="footer_social-copyright">
+        <p>Copyright © 2020 patashule inc. all rights reserved. This project was based in patashule design made by <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/mathewnjuguna">Mathew Njuguna</a> and <a target="_blank" href="https://www.behance.net/aweSam" rel="noopener noreferrer">Sam Achola</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

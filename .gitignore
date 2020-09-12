@@ -1,0 +1,4 @@
+node_modules
+other-resources
+.vscode
+.sass-cache

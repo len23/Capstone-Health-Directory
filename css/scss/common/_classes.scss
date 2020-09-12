@@ -1,0 +1,63 @@
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-space-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cards-section {
+  @extend .flex-space-between;
+
+  padding: 2rem 7rem;
+  color: $white-color;
+
+  @include max-width_center(133rem);
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+    font-weight: $regular;
+    margin-bottom: 1.8rem;
+  }
+
+  .btn_cards {
+    background-color: $white-color;
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+    font-weight: $semi-bold;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.max-width_cards {
+  @include max-width_center(1130rem);
+}
+
+.footer_border {
+  border-top: $border-footer;
+  border-bottom: $border-footer;
+}
